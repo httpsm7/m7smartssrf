@@ -1,0 +1,40 @@
+# m7smartssrf - Default Configuration
+# By: Sharlix | Milkyway Intelligence | httpsm7
+
+# Scan settings
+threads: 20
+timeout: 10
+retries: 2
+delay: 0
+
+# Mode: fast | deep | stealth
+mode: fast
+
+# OOB detection
+oob: false
+oob_server: null
+
+# Proxy
+proxy: null
+# proxy: "http://127.0.0.1:8080"   # Uncomment for Burp Suite
+
+# Bypass filter techniques
+# bypass: "all"    # Options: localhost, metadata, all
+
+# Output
+output: report
+format: all   # json | csv | txt | all
+
+# Stealth options
+stealth_delay: false
+rotate_ua: false
+
+# Safe mode (avoid destructive payloads)
+safe: false
+
+# Save session for resume
+save_session: false
+
+# Logging verbosity
+verbose: false
+silent: false
